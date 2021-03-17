@@ -9,17 +9,7 @@ public class Exercise6 {
 		project.run(finalMap);
 	}
 
-	public void run(HashMap<String, Integer> map) {
-		Set<Map.Entry<String, Integer>> entrySet = map.entrySet();
-		HashMap<String, String> finalMap = new HashMap<>();
-		for (Map.Entry<String, Integer> entry : entrySet) {
-			String key = entry.getKey();
-			Integer marks = entry.getValue();
-			if (marks < 60) {
-				finalMap.put(key, "fail");
-			} else {
-				finalMap.put(key, "pass");
-			}
+	
 		}
 		System.out.println(finalMap);
 	}
